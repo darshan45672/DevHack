@@ -10,12 +10,20 @@ const Sponsors = () => {
     <Box sx={{ textAlign: 'center', mt: 10 }}>
       <Box sx={{ display: 'flex', justifyContent: 'center', mb: 8 }}>
         <Image
-          src="/images/sponsorhehe.jpg"
-          width={isSmallScreen ? 400 : 800}
+          src="/images/sponsor.jpg"
+          width={isSmallScreen ? 200 : 400}
           height={20}
-          alt="Please sponsor us"
+          alt="Sponsors here"
         />
       </Box>
+      {/* <Box sx={{ display: 'flex', justifyContent: 'center', mb: 8 }}>
+        <Image
+          src="/images/sponsor.jpg"
+          width={isSmallScreen ? 200 : 400}
+          height={20}
+          alt="Sponsors here"
+        />
+      </Box> */}
       {/**<Box sx={{ display: 'flex', justifyContent: 'center', mb: 8 }}>
         <Image
           src="/images/1.png"

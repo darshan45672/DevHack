@@ -225,6 +225,21 @@ function NavBar() {
                     </Typography>
                   </MenuItem>
                 </Link>
+                <Link href="https://forms.gle/tf4QwvntU7xdzZBx7" target="_blank">
+                  <MenuItem
+                    sx={{ py: "5px", px: "10px", my: "6px", mx: "3px" }}
+                  >
+                    <Typography
+                      className="underline-animation"
+                      variant="body2"
+                      color="white"
+                      fontSize="18px"
+                      fontFamily="Varela"
+                    >
+                      Register Now
+                    </Typography>
+                  </MenuItem>
+                </Link>
               </Box>
             </Box>
             <Box
@@ -279,7 +294,7 @@ function NavBar() {
                       fontSize="20px"
                       fontFamily="Varela"
                     >
-                      <Link href="/">Discover DEVHACK</Link>
+                      <Link href="/">Home</Link>
                     </Typography>
                   </MenuItem>
                   <MenuItem sx={{ py: "20px", px: "12px" }}>
@@ -364,6 +379,16 @@ function NavBar() {
                       fontFamily="Varela"
                     >
                       <Link href="/faq">FAQ</Link>
+                    </Typography>
+                  </MenuItem>
+                  <MenuItem sx={{ py: "20px", px: "12px" }}>
+                    <Typography
+                      variant="body2"
+                      color="white"
+                      fontSize="20px"
+                      fontFamily="Varela"
+                    >
+                      <Link href="https://forms.gle/tf4QwvntU7xdzZBx7" rel="noreferrer noopener" target="_blank">Register Now</Link>
                     </Typography>
                   </MenuItem>
                 </Box>

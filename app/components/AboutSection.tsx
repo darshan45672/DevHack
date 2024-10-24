@@ -175,7 +175,7 @@ function AboutSection() {
                     color: "white",
                   }}
                 >
-                  1st November, 2024
+                  1st October, 2024
                 </Typography>
               </Typography>
               <Typography
@@ -219,7 +219,7 @@ function AboutSection() {
                     color: "white",
                   }}
                 >
-                  1st December, 2024
+                  29th - 30th November, 2024
                 </Typography>
               </Typography>
             </Stack>

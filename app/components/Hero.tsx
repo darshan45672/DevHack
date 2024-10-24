@@ -117,7 +117,7 @@ export default function Hero() {
                   repeat={Infinity}
                 />
               </Typography>
-              <div className="flex flex-col md:flex-row gap-2">
+              <div className="flex md:flex-row text-center gap-2">
                 <img
                   className="flex"
                   src="/images/sponsor.jpg"
