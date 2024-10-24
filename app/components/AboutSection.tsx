@@ -3,6 +3,7 @@ import Typography from "@mui/material/Typography";
 import Container from "@mui/material/Container";
 import Stack from "@mui/material/Stack";
 import Grid from "@mui/material/Grid";
+
 import "./fonts/font.css";
 
 function AboutSection() {
