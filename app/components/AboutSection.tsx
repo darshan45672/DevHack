@@ -175,7 +175,7 @@ function AboutSection() {
                     color: "white",
                   }}
                 >
-                  1st November, 2024
+                  1st October, 2024
                 </Typography>
               </Typography>
               <Typography
@@ -187,7 +187,7 @@ function AboutSection() {
                   color: "#1DD8FE",
                 }}
               >
-                Registration Closes :&nbsp;
+                Registration Closed :&nbsp;
                 <Typography
                   component="span"
                   variant="h1"
@@ -209,7 +209,7 @@ function AboutSection() {
                   color: "#1DD8FE",
                 }}
               >
-                DevHack :&nbsp;
+                DEVHACK :&nbsp;
                 <Typography
                   component="span"
                   variant="h1"
