@@ -44,9 +44,9 @@ export default function Hero() {
           >
             <Stack spacing={2}>
               <img
-                src="logo.png"
+                src="images/Dev.png"
                 alt="logo of DevHack"
-                style={{ width: "300px", height: "auto", cursor: "pointer" }}
+                style={{ width: "500px", height: "auto", cursor: "pointer", }}
               />
               <Typography
                 color="white"
@@ -57,7 +57,7 @@ export default function Hero() {
                   fontSize: "22px",
                 }}
               >
-                An initiative by
+                A 24-Hour Hackathon
               </Typography>
               <Typography
                 color="text.secondary"
@@ -69,7 +69,8 @@ export default function Hero() {
                   color: "#5DB8DE",
                 }}
               >
-                AJIET Mangalore
+                Initiated by Dept. CSE Enigma
+                <br />in association with DevNation
               </Typography>
               <Typography
                 color="white"
@@ -80,7 +81,7 @@ export default function Hero() {
                   fontSize: "22px",
                 }}
               >
-                Institute of Engineering and Technology
+               A J Institute of Engineering and Technology
               </Typography>
               <Typography
                 color="white"
