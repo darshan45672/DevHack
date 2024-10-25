@@ -99,7 +99,7 @@ function NavBar() {
                 <Link href="/">
                   <img
                     onClick={() => scrollToSection("hero")}
-                    src="/images/dev.png"
+                    src="images/dev.png"
                     style={logoStyle}
                     alt="logo"
                   />
