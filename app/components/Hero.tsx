@@ -121,7 +121,7 @@ export default function Hero() {
               <div className="flex md:flex-row text-center gap-2">
                 <img
                   className="flex"
-                  src="/images/sponsor.jpg"
+                  src="/images/enigma.png"
                   alt="logo of DevHack"
                   style={{
                     width: "100px",
@@ -132,10 +132,56 @@ export default function Hero() {
                 />
                 <img
                   className="flex"
-                  src="/images/sponsor.jpg"
+                  src="/images/enigma.png"
                   alt="logo of DevHack"
                   style={{
                     width: "100px",
+                    height: "auto",
+                    cursor: "pointer",
+                    marginBottom: "15px",
+                  }}
+                />
+                <img
+                  className="flex"
+                  src="/images/enigma.png"
+                  alt="logo of DevHack"
+                  style={{
+                    width: "100px",
+                    height: "auto",
+                    cursor: "pointer",
+                    marginBottom: "15px",
+                  }}
+                />
+                <img
+                  className="flex"
+                  src="/images/enigma.png"
+                  alt="logo of DevHack"
+                  style={{
+                    width: "100px",
+                    height: "auto",
+                    cursor: "pointer",
+                    marginBottom: "15px",
+                  }}
+                />
+                <img
+                  className="flex"
+                  src="/images/enigma.png"
+                  alt="logo of DevHack"
+                  style={{
+                    width: "100px",
+                    height: "auto",
+                    cursor: "pointer",
+                    marginBottom: "15px",
+                  }}
+                />
+              </div>
+              <div className="flex md:flex-row text-center gap-2">
+                <img
+                  className="flex"
+                  src="/logo.png"
+                  alt="logo of DevHack"
+                  style={{
+                    width: "350px",
                     height: "auto",
                     cursor: "pointer",
                     marginBottom: "15px",
