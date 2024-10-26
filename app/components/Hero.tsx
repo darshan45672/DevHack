@@ -43,6 +43,17 @@ export default function Hero() {
             sx={{ width: { xs: "80%", sm: "40%" }, mt: { xs: 10, sm: 8 } }}
           >
             <Stack spacing={2}>
+            <img
+                  className="flex"
+                  src="/images/enigma.png"
+                  alt="logo of DevHack"
+                  style={{
+                    width: "110px",
+                    height: "auto",
+                    cursor: "pointer",
+                    marginBottom: "15px",
+                  }}
+                  />
               <img
                 src="images/Dev.png"
                 alt="logo of DevHack"
@@ -105,13 +116,13 @@ export default function Hero() {
                 <TypeAnimation
                   sequence={[
                     // Same substring at the start will only be typed once, initially
+                    "29th November 2024",
+                    1000,
                     "Code | Create | Conquer",
                     1000,
                     "Battle of Development",
                     1000,
                     "Mark the Date",
-                    1000,
-                    "01.11.2024",
                     1000,
                   ]}
                   speed={50}
