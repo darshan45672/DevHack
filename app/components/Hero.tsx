@@ -119,62 +119,40 @@ export default function Hero() {
                 />
               </Typography>
               <div className="flex md:flex-row text-center gap-2">
+                  <img
+                    className="flex"
+                    src="/images/ajiet.png"
+                    alt="logo of DevHack"
+                    style={{
+                      width: "100px",
+                      height: "auto",
+                      cursor: "pointer",
+                      marginBottom: "15px",
+                    }}
+                  />
                 <img
                   className="flex"
                   src="/images/enigma.png"
                   alt="logo of DevHack"
                   style={{
-                    width: "100px",
+                    width: "110px",
                     height: "auto",
                     cursor: "pointer",
                     marginBottom: "15px",
                   }}
-                />
+                  />
                 <img
                   className="flex"
                   src="/images/enigma.png"
                   alt="logo of DevHack"
                   style={{
-                    width: "100px",
+                    width: "110px",
                     height: "auto",
                     cursor: "pointer",
                     marginBottom: "15px",
                   }}
-                />
-                <img
-                  className="flex"
-                  src="/images/enigma.png"
-                  alt="logo of DevHack"
-                  style={{
-                    width: "100px",
-                    height: "auto",
-                    cursor: "pointer",
-                    marginBottom: "15px",
-                  }}
-                />
-                <img
-                  className="flex"
-                  src="/images/enigma.png"
-                  alt="logo of DevHack"
-                  style={{
-                    width: "100px",
-                    height: "auto",
-                    cursor: "pointer",
-                    marginBottom: "15px",
-                  }}
-                />
-                <img
-                  className="flex"
-                  src="/images/enigma.png"
-                  alt="logo of DevHack"
-                  style={{
-                    width: "100px",
-                    height: "auto",
-                    cursor: "pointer",
-                    marginBottom: "15px",
-                  }}
-                />
-              </div>
+                  />
+                  </div>
               <div className="flex md:flex-row text-center gap-2">
                 <img
                   className="flex"
