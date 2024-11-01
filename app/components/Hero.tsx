@@ -6,8 +6,9 @@ import Stack from "@mui/material/Stack";
 import Container from "@mui/material/Container";
 import Typography from "@mui/material/Typography";
 import { TypeAnimation } from "react-type-animation";
-import "./fonts/font.css";
+import "@/public/fonts/font.css";
 import Timer from "./Timer";
+import Image from "next/image";
 
 export default function Hero() {
   useEffect(() => {
@@ -22,7 +23,7 @@ export default function Hero() {
   }, []);
   return (
     <Container id="hero" sx={{ maxWidth: { xs: "1300px" } }}>
-      <Stack alignContent="center" sx={{ pb: { xs: 2 }, pt: { xs: 5 } }}>
+      <Stack alignContent="center" className="pt-12 md:pt-5 pb-2">
         <Grid
           className="sm:max-lg:flex sm:max-lg:justify-center sm:max-lg:text-center"
           container
@@ -40,24 +41,28 @@ export default function Hero() {
           <Grid
             item
             sm="auto"
-            sx={{ width: { xs: "80%", sm: "40%" }, mt: { xs: 10, sm: 8 } }}
+            sx={{ width: { xs: "90%", sm: "40%" }, mt: { xs: 8, sm: 8 } }}
           >
             <Stack spacing={2}>
-            <img
+            <Image
                   className="flex"
                   src="/images/enigma.png"
                   alt="logo of DevHack"
+                  width={400}
+                  height={400}
                   style={{
-                    width: "110px",
+                    width: "70px",
                     height: "auto",
                     cursor: "pointer",
-                    marginBottom: "15px",
+                    marginBottom: "1px",
                   }}
                   />
-              <img
-                src="images/Dev.png"
+              <Image
+                width={400}
+                height={400}
+                src="/images/Dev.png"
                 alt="logo of DevHack"
-                style={{ width: "500px", height: "auto", cursor: "pointer", }}
+                style={{ width: "300px", height: "auto", cursor: "pointer", }}
               />
               <Typography
                 color="white"
@@ -76,7 +81,7 @@ export default function Hero() {
                   alignSelf: "left",
                   width: { sm: "100%", md: "100%" },
                   fontFamily: "popBold",
-                  fontSize: "25px",
+                  fontSize: "20px",
                   color: "#5DB8DE",
                 }}
               >
@@ -89,7 +94,7 @@ export default function Hero() {
                   alignSelf: "left",
                   width: { sm: "100%", md: "100%" },
                   fontFamily: "Varela",
-                  fontSize: "22px",
+                  fontSize: "20px",
                 }}
               >
                A J Institute of Engineering and Technology
@@ -100,15 +105,15 @@ export default function Hero() {
                   alignSelf: "left",
                   width: { sm: "100%", md: "100%" },
                   fontFamily: "Varela",
-                  fontSize: "20px",
+                  fontSize: "18px",
                 }}
               >
                 MANGALORE | KARNATAKA
               </Typography>
               <Typography
-                variant="h1"
+                variant="h2"
                 sx={{
-                  fontSize: "clamp(1rem, 2vw, 2rem)",
+                  fontSize: "clamp(0.5rem, 2vw, 1.5rem)",
                   fontFamily: "blanka",
                   color: "#1DD8FE",
                 }}
@@ -129,52 +134,27 @@ export default function Hero() {
                   repeat={Infinity}
                 />
               </Typography>
-              <div className="flex md:flex-row text-center gap-2">
-                  <img
-                    className="flex"
-                    src="/images/ajiet.png"
-                    alt="logo of DevHack"
-                    style={{
-                      width: "100px",
-                      height: "auto",
-                      cursor: "pointer",
-                      marginBottom: "15px",
-                    }}
-                  />
-                <img
-                  className="flex"
+              <div className="grid grid-cols-2 md:grid-cols-3 text-center justify-center md:justify-start items-center">
+                <Image
+                  width={400}
+                  height={400}
+                  src="/images/ajiet.png"
+                  alt="logo of DevHack"
+                  className="w-[80px] h-auto cursor-pointer mb-4"
+                />
+                <Image
+                  width={400}
+                  height={400}
                   src="/images/enigma.png"
                   alt="logo of DevHack"
-                  style={{
-                    width: "110px",
-                    height: "auto",
-                    cursor: "pointer",
-                    marginBottom: "15px",
-                  }}
-                  />
-                <img
-                  className="flex"
+                  className="w-[80px] h-auto cursor-pointer mb-4"
+                />
+                <Image
+                  width={400}
+                  height={400}
                   src="/images/enigma.png"
                   alt="logo of DevHack"
-                  style={{
-                    width: "110px",
-                    height: "auto",
-                    cursor: "pointer",
-                    marginBottom: "15px",
-                  }}
-                  />
-                  </div>
-              <div className="flex md:flex-row text-center gap-2">
-                <img
-                  className="flex"
-                  src="/logo.png"
-                  alt="logo of DevHack"
-                  style={{
-                    width: "350px",
-                    height: "auto",
-                    cursor: "pointer",
-                    marginBottom: "15px",
-                  }}
+                  className="w-[80px] h-auto cursor-pointer mb-4"
                 />
               </div>
             </Stack>
@@ -191,7 +171,9 @@ export default function Hero() {
             }}
           >
             <Box sx={{ textAlign: "right" }}>
-              <img
+              <Image
+                width={500}
+                height={500}
                 src="/images/hand.png"
                 alt="hand"
                 style={{

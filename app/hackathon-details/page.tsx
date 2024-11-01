@@ -5,6 +5,7 @@ import Grid from "@mui/material/Grid";
 import Button from "@mui/material/Button";
 import { Box } from "@mui/material";
 import Image from "next/image";
+import Link from "next/link";
 
 function Home() {
   return (
@@ -90,18 +91,20 @@ function Home() {
         </Box>
       </Stack>
       <Box className="flex flex-col justify-center items-center mt-10 p-2">
-        <a
+        <Link
           rel="noopener"
           href="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d31111.06943415277!2d74.828766!3d12.915197!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3ba35a7940000001%3A0x37b1d2f42900de85!2sAJ%20Institute%20of%20Engineering%20%26%20Technology!5e0!3m2!1sen!2sus!4v1728167304095!5m2!1sen!2sus"
           target="_blank"
         >
-          <img
+          <Image
+            width={400}
+            height={400}
             className="rounded-lg min-h-[30vh] m:h-auto shadow-lg shadow-black"
             src="/images/Location.png"
             alt="location"
             style={{}}
           />
-        </a>
+        </Link>
         <Button
           sx={{
             marginTop: 5,
@@ -219,7 +222,7 @@ function Home() {
                   color: "white",
                 }}
               >
-                Begins on 1st November, 2024 and ends on 15th November, 2024.
+                Begins on 1st November, 2024 and ends on 18th November, 2024.
               </Typography>
             </Box>
           </Stack>
@@ -293,7 +296,9 @@ function Home() {
           statements.
         </Typography>
 
-        <img
+        <Image
+          width={400}
+          height={400}
           src="/images/prizess.png"
           alt="About us image"
           style={{
@@ -397,7 +402,9 @@ function Home() {
             display: { xs: "none", sm: "block" },
           }}
         >
-          <img
+          <Image
+            width={400}
+            height={400}
             src="/images/Hero.png"
             alt="About us image"
             style={{ width: "500px", height: "auto", cursor: "pointer" }}

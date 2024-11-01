@@ -8,7 +8,8 @@ import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import { themes } from "./ThemesList";
 import Link from "next/link";
-import "./fonts/font.css";
+import "@/public/fonts/font.css";
+import Image from "next/image";
 
 function ThemeSection() {
   var settings = {
@@ -82,7 +83,9 @@ function ThemeSection() {
               transition={{ type: "spring", stiffness: 400, damping: 10 }}
             >
               <div className="group relative block  rounded-xl bg-black sm:max-lg:mx-3 lg:mx-7 lg:my-10">
-                <img
+                <Image
+                  width={400}
+                  height={400}
                   alt={theme.title}
                   src={theme.image}
                   className="absolute inset-0 h-full w-full object-cover rounded-xl opacity-75 transition-opacity group-hover:opacity-50"
@@ -100,8 +103,7 @@ function ThemeSection() {
                       }}
                     >
                       <p
-                        className="text-xl font-bold text-white text-center sm:text-2xl mt-2"
-                        style={{ fontFamily: "blanka" }}
+                        className="text-xl font-bold text-white text-center sm:text-2xl mt-2 font-blanka"
                       >
                         {theme.title}
                       </p>
@@ -112,8 +114,7 @@ function ThemeSection() {
                         className="group inline-block rounded-full bg-gradient-to-r from-[#3F80FF] to-[#5CE1E6] p-[2px] hover:text-[#0F337F] focus:outline-none focus:ring active:text-opacity-75"
                       >
                         <span
-                          className="block rounded-full bg-white px-8 py-3 text-sm font-medium group-hover:bg-transparent"
-                          style={{ fontFamily: "Varela" }}
+                          className="block rounded-full bg-white px-8 py-3 text-sm font-medium group-hover:bg-transparent font-Varela"
                         >
                           Know more
                         </span>

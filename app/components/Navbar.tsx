@@ -11,11 +11,12 @@ import Typography from "@mui/material/Typography";
 import MenuItem from "@mui/material/MenuItem";
 import Drawer from "@mui/material/Drawer";
 import MenuIcon from "@mui/icons-material/Menu";
-import "./fonts/font.css";
+import "@/public/fonts/font.css";
 import Link from "next/link";
-import "./styles/navbar.css";
+import "@/public/styles/navbar.css";
 
 import FlyoutLink from "./FlyoutContent";
+import Image from "next/image";
 
 const logoStyle = {
   width: "100px",
@@ -97,9 +98,11 @@ function NavBar() {
                 }}
               >
                 <Link href="/">
-                  <img
+                  <Image
+                    width={400}
+                    height={400}
                     onClick={() => scrollToSection("hero")}
-                    src="images/Dev.png"
+                    src="/images/Dev.png"
                     style={logoStyle}
                     alt="logo"
                   />
@@ -124,11 +127,10 @@ function NavBar() {
                     sx={{ py: "5px", px: "10px", my: "6px", mx: "3px" }}
                   >
                     <Typography
-                      className="underline-animation"
+                      className="underline-animation font-Varela"
                       variant="body2"
                       color="white"
                       fontSize="18px"
-                      fontFamily="Varela"
                     >
                       Problem Statements
                     </Typography>
@@ -406,14 +408,14 @@ const TeamContent = () => {
     <div className="w-64 p-6">
       <div className="mb-1 space-y-3">
         <h3 className="font-semibold">
-          <a href="/executive-team" className="block hover:underline">
+          <Link href="/executive-team" className="block hover:underline">
             Executive Team
-          </a>
+          </Link>
         </h3>
         <h3 className="font-semibold">
-          <a href="/student-body" className="block hover:underline">
+          <Link href="/student-body" className="block hover:underline">
             Student Body
-          </a>
+          </Link>
         </h3>
       </div>
     </div>

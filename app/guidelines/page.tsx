@@ -1,3 +1,4 @@
+import Link from "next/link";
 import { FaFileDownload } from "react-icons/fa";
 
 
@@ -6,16 +7,14 @@ const Guidelines = () => {
     <section className="bg-inherit pt-20">
       <div className="p-8 md:p-12 lg:px-16 lg:py-20 pt-20">
         <div
-          className="mx-auto max-w-5xl text-center"
-          style={{ fontFamily: "blanka"}}
+          className="mx-auto max-w-5xl text-center font-blanka"
         >
           <h1 className="bg-gradient-to-r from-green-300 via-blue-500 to-purple-600 bg-clip-text text-5xl font-extrabold text-transparent sm:text-5xl">
             GUIDELINES
           </h1>
 
           <article
-            className="rounded-lg border text-left mt-10 shadow-sm transition hover:shadow-lg hover:bg-white/10 hover:border-white/10 sm:p-6 border-gray-800 bg-gray-900 shadow-gray-700/25"
-            style={{ fontFamily: "Varela" }}
+            className="rounded-lg border text-left mt-10 shadow-sm transition hover:shadow-lg hover:bg-white/10 hover:border-white/10 sm:p-6 border-gray-800 bg-gray-900 shadow-gray-700/25 font-Varela"
           >
             <h2 className="mt-0.5 text-md sm:text-lg md:text-2xl font-medium text-gray-900 dark:text-white">
               PARTICIPATION ELIGIBILITY:
@@ -36,8 +35,7 @@ const Guidelines = () => {
           </article>
 
           <article
-            className="rounded-lg border text-left mt-10 shadow-sm transition hover:shadow-lg hover:bg-white/10 hover:border-white/10 sm:p-6 border-gray-800 bg-gray-900 shadow-gray-700/25"
-            style={{ fontFamily: "Varela" }}
+            className="rounded-lg border text-left mt-10 shadow-sm transition hover:shadow-lg hover:bg-white/10 hover:border-white/10 sm:p-6 border-gray-800 bg-gray-900 shadow-gray-700/25 font-Varela"
           >
             <h2 className="mt-0.5 sm:text-lg md:text-2xl font-medium text-gray-900 dark:text-white">
               SELECTION OF MENTOR (OPTIONAL):
@@ -59,8 +57,7 @@ const Guidelines = () => {
           </article>
 
           <article
-            className="rounded-lg border text-left mt-10 shadow-sm transition hover:shadow-lg hover:bg-white/10 hover:border-white/10 sm:p-6 border-gray-800 bg-gray-900 shadow-gray-700/25"
-            style={{ fontFamily: "Varela" }}
+            className="rounded-lg border text-left mt-10 shadow-sm transition hover:shadow-lg hover:bg-white/10 hover:border-white/10 sm:p-6 border-gray-800 bg-gray-900 shadow-gray-700/25 font-Varela"
           >
             <h2 className="mt-0.5 sm:text-lg md:text-2xl font-medium text-gray-900 dark:text-white">
               FORMING A TEAM:
@@ -73,8 +70,7 @@ const Guidelines = () => {
           </article>
 
           <article
-            className="rounded-lg border text-left  mt-10 shadow-sm transition hover:shadow-lg hover:bg-white/10 hover:border-white/10 sm:p-6 border-gray-800 bg-gray-900 shadow-gray-700/25"
-            style={{ fontFamily: "Varela" }}
+            className="rounded-lg border text-left  mt-10 shadow-sm transition hover:shadow-lg hover:bg-white/10 hover:border-white/10 sm:p-6 border-gray-800 bg-gray-900 shadow-gray-700/25 font-Varela"
           >
             <h2 className="mt-0.5 sm:text-lg md:text-2xl font-medium text-gray-900 dark:text-white">
               PRIMARY REGISTRATION:
@@ -133,8 +129,7 @@ const Guidelines = () => {
           </article>
 
           <article
-            className="rounded-lg border text-left  mt-10 shadow-sm transition hover:shadow-lg hover:bg-white/10 hover:border-white/10 sm:p-6 border-gray-800 bg-gray-900 shadow-gray-700/25"
-            style={{ fontFamily: "Varela" }}
+            className="rounded-lg border text-left  mt-10 shadow-sm transition hover:shadow-lg hover:bg-white/10 hover:border-white/10 sm:p-6 border-gray-800 bg-gray-900 shadow-gray-700/25 font-Varela"
           >
             <h2 className="mt-0.5 sm:text-lg md:text-2xl font-medium text-gray-900 dark:text-white">
               IDEA APPROVAL & GRAND FINALE REGISTRATION:
@@ -158,8 +153,7 @@ const Guidelines = () => {
           </article>
 
           <article
-            className="rounded-lg border text-left  mt-10 shadow-sm transition hover:shadow-lg hover:bg-white/10 hover:border-white/10 sm:p-6 border-gray-800 bg-gray-900 shadow-gray-700/25"
-            style={{ fontFamily: "Varela" }}
+            className="rounded-lg border text-left  mt-10 shadow-sm transition hover:shadow-lg hover:bg-white/10 hover:border-white/10 sm:p-6 border-gray-800 bg-gray-900 shadow-gray-700/25 font-Varela"
           >
             <h2 className="mt-0.5 sm:text-lg md:text-2xl font-medium text-gray-900 dark:text-white">
               GRAND FINALE:
@@ -181,19 +175,18 @@ const Guidelines = () => {
             </ul>
           </article>
           <p
-          className="mx-auto mt-20 text-white max-w-2xl sm:text-xl/relaxed  sm:max-lg:pb-5 lg:pb-10"
-          style={{ fontFamily: "Varela" }}
+          className="mx-auto mt-20 text-white max-w-2xl sm:text-xl/relaxed  sm:max-lg:pb-5 lg:pb-1 font-Varela"
         >
           Download the Consent letter from the download button bellow.
         </p>
         <div className="flex flex-wrap justify-center gap-4">
-          <a
+          <Link
             className="flex justify-center gap-4 w-full rounded border border-blue-600 px-12 py-3 text-sm font-medium text-white hover:bg-blue-600 focus:outline-none focus:ring active:bg-blue-500 sm:w-auto"
             href="/files/consentLetter.docx"
             download="Consent Letter"
           >
             DOWNLOAD <FaFileDownload className="text-lg" />
-          </a>
+          </Link>
           </div>
         </div>
       </div>
