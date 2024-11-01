@@ -1,10 +1,11 @@
 'use client';
 
-import './fonts/font.css';
+import '@/public/fonts/font.css';
 import { FaLocationDot } from 'react-icons/fa6';
 import { IoMdCall } from 'react-icons/io';
 import { MdEmail } from 'react-icons/md';
 import { BsGlobe } from 'react-icons/bs';
+import Link from 'next/link';
 
 const ContactUs = () => {
   return (
@@ -29,7 +30,7 @@ const ContactUs = () => {
       </button>
       <dialog id="my_modal_2" className="modal">
         <div className="modal-box bg-gradient-to-r from-cyan-500 to-blue-500">
-          <h3 className="font-bold text-3xl lg:text-5xl mb-10 text-center text-[#074081]" style={{fontFamily: "blanka",}}>
+          <h3 className="font-bold text-3xl lg:text-5xl mb-10 text-center text-[#074081] font-blanka">
             CONTACT US
           </h3>
           <p className="py-4 flex flex-row text-sm lg:text-xl">
@@ -75,7 +76,9 @@ const ContactUs = () => {
                 color: '#074081',
               }}
             />
-            <p className="py-1 md:py-4 flex flex-row text-sm lg:text-xl">ajiet.edu.in</p>
+            <Link href={'https://ajiet.edu.in'} rel='noreferrer noopenener' target='_blank' className="py-1 md:py-4 flex flex-row text-sm lg:text-xl">
+              ajiet.edu.in
+            </Link>
           </div>
         </div>
         <form method="dialog" className="modal-backdrop">
